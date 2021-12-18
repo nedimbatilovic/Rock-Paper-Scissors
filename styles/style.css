@@ -44,5 +44,67 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro button,
+.match button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 20px;
+  background: #2d7560;
+  border-radius: 4px;
+}
+
+.winner {
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 50px;
+}
+
+.hands,
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player-hand {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
 }
 /*# sourceMappingURL=style.css.map */

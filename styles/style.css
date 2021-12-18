@@ -7,12 +7,17 @@
 
 section {
   height: 100vh;
-  background-color: #272944;
+  background: #2980b9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(#6dd5fa), to(#2980b9));
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: sans-serif;
 }
 
 .score {
-  color: #e0e0e0;
+  color: black;
   height: 20ch;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +40,7 @@ section {
 }
 
 .intro {
-  color: #e0e0e0;
+  color: black;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,9 +77,9 @@ section {
   width: 150px;
   height: 50px;
   border: none;
-  color: #e0e0e0;
+  color: black;
   font-size: 20px;
-  background: #2d7560;
+  background: #2980b9;
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -83,11 +88,11 @@ section {
 
 .intro button:hover,
 .match button:hover {
-  background: #255747;
+  background: #1f5e88;
 }
 
 .winner {
-  color: #e0e0e0;
+  color: black;
   text-align: center;
   font-size: 50px;
 }

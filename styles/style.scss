@@ -6,12 +6,25 @@
 
 section {
     height: 100vh;
-    background-color: rgb(39, 41, 68);
+    background: #2980b9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #ffffff,
+        #6dd5fa,
+        #2980b9
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #ffffff,
+        #6dd5fa,
+        #2980b9
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-family: sans-serif;
 }
 
 .score {
-    color: rgb(224, 224, 224);
+    color: black;
     height: 20ch;
     display: flex;
     justify-content: space-around;
@@ -28,7 +41,7 @@ section {
 }
 
 .intro {
-    color: rgb(224, 224, 224);
+    color: black;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -54,20 +67,20 @@ section {
         width: 150px;
         height: 50px;
         border: none;
-        color: rgb(224, 224, 224);
+        color: black;
         font-size: 20px;
-        background: rgb(45, 117, 96);
+        background: #2980b9;
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.3s ease;
         &:hover {
-            background: rgb(37, 87, 71);
+            background: #1f5e88;
         }
     }
 }
 
 .winner {
-    color: rgb(224, 224, 224);
+    color: black;
     text-align: center;
     font-size: 50px;
 }

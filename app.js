@@ -26,9 +26,10 @@ const game = () => {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
                 // call compare hands
-
+                compareHands(this.textContent, computerChoice);
                 // update images
-                playerHand.scr = `./resources/${this.textContent}`;
+                playerHand.src = `./resources/${this.textContent}.png`;
+                computerHand.src = `./resources/${computerChoice}.png`;
             });
         });
     };
@@ -58,7 +59,7 @@ const game = () => {
                 winner.textContent = "Computer wins.";
                 return;
             } else {
-                winner.textContent = "PLayer wins.";
+                winner.textContent = "Player wins.";
                 return;
             }
         }

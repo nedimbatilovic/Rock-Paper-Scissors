@@ -49,6 +49,8 @@ section {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .intro h1 {
@@ -61,18 +63,27 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
 }
 
 .intro button,
 .match button {
   width: 150px;
   height: 50px;
-  background: none;
   border: none;
   color: #e0e0e0;
   font-size: 20px;
   background: #2d7560;
   border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.intro button:hover,
+.match button:hover {
+  background: #255747;
 }
 
 .winner {
